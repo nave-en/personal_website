@@ -82,10 +82,28 @@
             color: orange;
         }
 
-        #sslc_text p, #hsc_text p, #college_text p  {
+        #sslc_text p,
+        #hsc_text p,
+        #college_text p {
             font-family: 'Brush Script MT', cursive;
-            color : Blue;
+            color: Blue;
             font-size: 25px;
+        }
+        #work {
+            height: 700px;
+            width: 1000px;
+            border-style: solid;
+            border-color: black;
+            margin-top: 50px;
+            margin-left: 100px;
+            display: block;
+            
+        }
+        #work td, label {
+            padding: 20px;
+        }
+        #work p, ul {
+            padding-left : 120px;
         }
     </style>
     <script>
@@ -165,20 +183,20 @@
             <h1>
                 <center>College</center>
             </h1>
-            <div id = "college_img">
+            <div id="college_img">
                 <img src="ceg.jpg" alt="College"></img>
             </div>
-            <div id = "college_text">
+            <div id="college_text">
             </div>
         </div>
         <div id="hsc" onmouseover="showHscInfo()" onmouseout="showHscImage()">
             <h1>
                 <center>Higher Secondary</center>
             </h1>
-            <div id ="hsc_img">
+            <div id="hsc_img">
                 <img src="hsc_1.jpg" alt="Higher secondary"></img>
             </div>
-            <div id = "hsc_text">
+            <div id="hsc_text">
             </div>
         </div>
         <div id="sslc" onmouseover="showSchoolInfo()" onmouseout="showSchoolImage()">
@@ -190,6 +208,46 @@
             </div>
             <div id="sslc_text">
             </div>
+        </div>
+    </div>
+    <div id="work">
+        <h1>
+            <center>Work Expierence</center>
+        </h1>
+        <div id = "zoomrx">
+            <div id = "zoomrxHeading">
+
+                <table>
+                    <tr>
+                        <td>Company</td>
+                        <td>Zoom Rx Health Care Pvt Ltd, Chennai</td>
+                    </tr>
+                    <tr>
+                        <td>Position </td>
+                        <td>Software Development Engineer 2</td>
+                    </tr>
+                </table>
+            </div>
+            <label>Description<label>
+            <p> 
+                Mainly worked as a Backend developer. Developed the tools using php frameworks like laravel and cakephp. Collect the Requirements from the business stakeholders,
+                Developed the tools based on the requirements. Taking the responsbilites from design to deployment sometimes post release also. Mentoring the juniors on about the
+                projects and development. 
+            </p>
+            <label>Working history</label>
+            <ul>
+                <li>Worked on the process automation for business stakeholders, Developed the tools for collecting data and also for analysis</li>
+                <li>Hands on expierence on PHP frameworks like laravel, cakephp, Mysql, HTML, CSS and Python</li>
+                <li>Expierence in Agile methodologies</li>
+                <li>Expierence in linux commands and Git</li>
+                <li>Involves with team for cross testing for the newly developed features</li>
+                <li>Worked on the php units for the automated testing for existing code and the newly developd features</li>
+                <li>Fixed the existing bugs in the existing system and improves the performance of the existing sql queries</li>
+                <li>Contributed to the sprint planning, prioritising backlogs to meet new demands</li>
+                <li>Refactored the existing application code and increase its performance</li>
+                <li>Hands on expierence on HTML, CSS and JavaScript for some projects.</li>
+                <li>Hands on AWS s3 bucket and mail service</li>
+            </ul>
         </div>
     </div>
 </body>
